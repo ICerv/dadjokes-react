@@ -1,5 +1,7 @@
 .joke {
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
+  display: flex;
+  flex-direction: column;
 }
 
 .joke__body {
@@ -23,6 +25,10 @@
   text-align: center;
 }
 
+.joke__content {
+  flex-grow: 1;
+}
+
 .joke__text {
   background-color: cornflowerblue;
   color: white;
@@ -30,47 +36,4 @@
   padding: 1.5rem 2rem;
   margin: 0;
   line-height: 150%;
-}
-
-.joke__likes {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  margin-top: 1rem;
-}
-
-.likes-count {
-  font-size: 1.5rem;
-  font-weight: bold;
-  margin: 0 0.5rem;
-}
-
-.likes-count--up {
-  color: #00e268;
-}
-
-.likes-count--down {
-  color: #ff5654;
-}
-
-.btn-like {
-  border: none;
-  outline: none;
-  width: 2rem;
-  height: 2rem;
-  border-radius: 1rem;
-  background-size: 1.2rem;
-  background-position: center;
-  background-repeat: no-repeat;
-  cursor: pointer;
-}
-
-.btn-like--up {
-  background-color: #00e268;
-  background-image: url('img/like-up.png');
-}
-
-.btn-like--down {
-  background-color: #ff5654;
-  background-image: url('img/like-down.png');
 }
